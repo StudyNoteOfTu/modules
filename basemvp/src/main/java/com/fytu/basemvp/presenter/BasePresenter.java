@@ -5,7 +5,6 @@ import java.lang.ref.WeakReference;
 public class BasePresenter<T> {
 
     //解决内存泄漏问题，我们暂时采用弱引用方式
-    // 还是得等到内存不足的时候才让gc来收
     protected WeakReference<T> mViewRef;
 
     //根除内存泄漏 --- 绑定
